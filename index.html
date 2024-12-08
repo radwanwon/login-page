@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.png" />
+    <!-- Titel -->
+    <title>Login Page</title>
+    <!-- icons -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- style -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container" id="container">
+        <!-- sing up form -->
+
+        <div class="form-container sign-up-container">
+          <form id="signUpForm">
+            <h1>Create Account</h1>
+            <span>or use your email for registration</span>
+            <input type="text" id="signUpName" placeholder="Name" />
+            <span id="signUpNameError" class="error-message"></span>
+            <input type="email" id="signUpEmail" placeholder="Email" />
+            <span id="signUpEmailError" class="error-message"></span>
+            <input type="password" id="signUpPassword" placeholder="Password" />
+            <span id="signUpPasswordError" class="error-message"></span>
+            <button type="submit">Sign Up</button>
+          </form>
+        </div>
+
+        <div class="form-container sign-in-container">
+          <!-- login form -->
+
+          <form id="signInForm">
+            <h1>Sign in</h1>
+            <span>or use your account</span>
+            <input type="email" id="signInEmail" placeholder="Email" />
+            <span id="signInEmailError" class="error-message"></span>
+            <input type="password" id="signInPassword" placeholder="Password" />
+            <span id="signInPasswordError" class="error-message"></span>
+            <button type="submit">Sign In</button>
+          </form>
+        </div>
+
+        <div class="overlay-container">
+          <div class="overlay">
+            <div class="overlay-panel overlay-left">
+              <h1>Welcome Back!</h1>
+              <p>
+                To keep connected with us please login with your personal info
+              </p>
+              <button class="ghost" id="signIn">Sign In</button>
+            </div>
+            <div class="overlay-panel overlay-right">
+              <h1>Hello, Friend!</h1>
+              <p>Enter your personal details and start journey with us</p>
+              <button class="ghost" id="signUp">Sign Up</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- start footer -->
+    <footer>
+      <p>LOGIN JS Assignment Route Academy <i class="fa fa-heart"></i></p>
+    </footer>
+    <!-- end footer -->
+
+    <!-- bootstrap js linked -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- sweet alert js linked -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- main js linked -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
